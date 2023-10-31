@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon panier</title>
+    <link rel="stylesheet" href="./css/style.css">
+ 
+</head>
+<body>
+    <section class="header" id="top">
+        <nav>
+            <a href="index.html"> <img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">MENU</a></li>
+                        <li><a href="commande.html">COMMANDES</a></li>
+                    </ul>
+            </div>
+            
+ 
+    <div id="listeCommandes">
+        <!-- Les commandes sélectionnées seront affichées ici -->
+    </div>
+ 
+    <button onclick="viderPanier()">Vider le Panier</button>
+    <button onclick="validrPanier()" ><a href="commande.html">Valider le Panier</a></button>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+ 
+    </section>
+   
+    
+ 
+    <script src="script.js"></script>
+</body>
+</html>

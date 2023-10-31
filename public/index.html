@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DélicesChezVous</title>
+ 
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+ 
+    <script src="./js/main.js" defer ></script>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+ 
+    <section class="header" id="top">
+        <nav>
+            <a href="index.html"> <img src="./img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#menu">MENU</a></li>
+                        <li><a href="Panier.html">PANIER</a></li>
+                        <li><a href="commande.html">COMMANDES</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+ 
+        <div class="text-box">
+            <h2>Savourez les spécialités des DélicesChezVous</h1>
+            <a href="#menu" class="order-btn">Commencer la commande</a>
+ 
+        </div>
+ 
+    </section>
+ 
+    <!-------- Menu --------->
+ 
+    <section id="menu">
+        <h1>Les Menus Que Nous Proposons</h1>
+        <p>Mangez comme à la maison grace à notre diversité culinaire</p>
+ 
+        <h2>Menu Maghrebin</h2>
+        <div class="menu-row">
+            <div class="menu-col">
+                <img class="image-hover" src="./img/couscous_Mag.jpeg" alt="">
+                <button type="submit" id="showDetails"><span>+</span>Détails</button>
+                 <!-- Bouton pour ajouter -->
+        <button type="button" class="add-button" data-quantity="0">+</button>
+        <span class="quantity-display">0</span>
+
+        <button type="button" class="remove-button" data-quantity="0">-</button>
+
+        
+        <!-- Élément pour afficher la quantité -->
+                <div class="checkboxes" id="checkboxContainer" style="display: none;">
+                    <input type="checkbox" id="option1" name="option1">
+                    <label for="option1">Ajouter plat</label><br>
+                    <p>Couscous</p>
+                    <p>Prix: 25$</p>
+                </div>
+            </div>
+
+            <div class="menu-col">
+                <img class="image-hover" src="./img/tadjin_poulet.jpeg" alt="">
+                <button type="submit" id="showDetailsCouscous"><span>+</span>Détails</button>
+       
+                <div class="checkboxes" id="checkboxContainerM" style="display: none;">
+                    <input type="checkbox" id="option1Mag" name="option1">
+                    <label for="option1">Ajouter plat</label><br>
+                    <p>Tadjin au Poulet</p>
+                    <p>Prix: 20$</p>
+                </div>
+            </div>
+        </div>
+        <h2>Menu Camerounais</h2>
+
+        <div class="menu-row">
+                <div class="menu-col">
+                    <img src="./img/Ndole.jpg">
+                    <button type="submit" id="showDetailsCamerounais"><span>+</span>Détails</button>
+                
+                    <div class="checkboxes" id="checkboxContainerCamerounais" style="display: none;">
+                        <input type="checkbox" id="option1Cam" name="option1">
+                        <label for="option1Cam">Ajouter plat</label><br>
+                        <p>Ndole</p>
+                        <p>Prix: 35$</p>
+                    </div>
+                </div>
+            
+            <div class="menu-col">
+                <img src="./img/taro_sauce_jaune.jpg">
+                <button type="submit" id="showDetailsC"><span>+</span>Détails</button>
+        
+                <div class="checkboxes" id="checkboxC" style="display: none;">
+                    <input type="checkbox" id="option1Cam" name="option1">
+                    <label for="option1Cam">Ajouter plat</label><br>
+                    <p>Sauce Jaune</p>
+                        <p>Prix: 40$</p>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="addToCart"><a href=" panier.html">Ajouter au panier</a></button>
+
+        <p><a href="#top">Retour en haut</a></p>
+    </section>
+ 
+   
+               
+    <!-------- Footer --------->  
+    <section class="footer">
+        <p>
+            &copy; Auteur: Amel, Francelle, Oumaima, Taha
+        </p>
+        
+    </section>
+       
+   
+</body>
+</html>
